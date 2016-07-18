@@ -3,7 +3,7 @@ import smtplib
 # https://docs.python.org/3/library/smtplib.html
 
 # Creamos un objeto session para el envio the emails
-session = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+session = smtplib.SMTP('smtp.gmail.com', 587)
 # Nos identificamos contra el cliente smtp de gmail
 session.ehlo()
 # Indicamos que nuestra conexion sera encriptada
