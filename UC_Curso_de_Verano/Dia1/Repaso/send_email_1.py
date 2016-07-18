@@ -7,9 +7,9 @@ def send_email():
     session = smtplib.SMTP('smtp.gmail.com', 587)
     session.ehlo()
     session.starttls()
-    session.login( "XXXX@gmail.com", "Xqwef" )
+    session.login( "josecarlosblancoreal@gmail.com", "U1olnlalee" )
     session.ehlo()
-    session.sendmail( "XXXX@gmail.com", "XXXX@gmail.com", "Esto es una prueba")
+    session.sendmail( "josecarlosblancoreal@gmail.com", "josecarlosblancoreal@gmail.com", "Subject: Hola\n\nEsto es una prueba")
     session.quit()
 
 send_email()
