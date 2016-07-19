@@ -1,7 +1,7 @@
-nucleos_de_poblacion = pd.read_csv( "Centroides_NucleosPoblacion.csv" )
+nucleos_de_poblacion = pd.read_csv( "https://raw.githubusercontent.com/blancojc/pythonforbigdata/master/UC_Curso_de_Verano/Dia2/Pandas/Ejercicio1/Centroides_NucleosPoblacion.csv" )
 
 # Municipios con memos de 11000 habitantes
-nucleos_de_poblacion[ nucleos_de_poblacion[ 'Poblacion' ] > 11000 ][ 'Municipio' ]
+nucleos_de_poblacion[ nucleos_de_poblacion[ 'Poblacion' ] < 11000 ][ 'Municipio' ]
 # O
 nucleos_de_poblacion[ nucleos_de_poblacion[ 'Poblacion' ].lt( 11000 ) ][ 'Municipio' ]
 
