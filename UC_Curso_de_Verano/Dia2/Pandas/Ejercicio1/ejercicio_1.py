@@ -8,5 +8,5 @@ nucleos_de_poblacion[ nucleos_de_poblacion[ 'Poblacion' ].lt( 11000 ) ][ 'Munici
 # Quinto municipio mas poblado
 nucleos_de_poblacion.sort_values( 'Poblacion' ).iloc[ -5  ]
 
-# 10 municipios de menor poblacion
-nucleos_de_poblacion.sort_values( 'Poblacion' ).iloc[ 0 : 10 ]
+# 5 municipios de menor poblacion
+nucleos_de_poblacion.sort_values( 'Poblacion' ).iloc[ 0 : 5 ]
